@@ -39,3 +39,6 @@ def constBoard(board):
     if(board[i]==1):
       print("O ", end =" ");
   print("\n\n");
+
+
+
