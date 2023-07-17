@@ -1,4 +1,4 @@
-//main code
+# main code
 def main():
   choice=input("Enter 1 for Single 2 for Multiple:");
   choice =int(choice);
@@ -26,3 +26,16 @@ def main():
         constBoard(board);
         user2Turn(board);
 
+# create constBoard Function
+def constBoard(board):
+  print("Current state of the board: \n\n");
+  for i in range(0,9):
+    if((i>0) and (i%3==0)):
+      print("\n");
+    if(board[i]==0):
+      print("_ ", end =" ");
+    if(board[i]==-1):
+      print("X ", end =" ");
+    if(board[i]==1):
+      print("O ", end =" ");
+  print("\n\n");
